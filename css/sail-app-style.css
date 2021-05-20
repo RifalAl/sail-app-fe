@@ -1,23 +1,54 @@
-
-.main-search-input-item input:first-child{
-    color: #292929;
-    font-family: inherit;
+.main-search-input-item input:first-child {
+  color: #292929;
+  font-family: inherit;
 }
 
 .intro-item h2,
-.section-subtitle{
-    font-weight: 300;
+.section-subtitle {
+  font-weight: 300;
 }
 
-.section-title h2{
-    font-weight: 600;
+.section-title h2 {
+  font-weight: 600;
 }
 
-.section-title p{
-    font-weight: 300;
-    font-size: 1.2rem;
+.section-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 
-.listing-item-grid .listing-item-cat h3{
-    font-weight: 500;
+.listing-item-grid .listing-item-cat h3 {
+  font-weight: 500;
+}
+
+
+.shapes-bg-big2:before  {
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-repeat:repeat;
+    opacity:0.3;
+}
+
+.shapes-bg-big2:before{
+    background-image:url(../images/bg/shapes-big.png);
+}
+
+.shapes-bg-big:before {
+  background-image: url(../images/bg/jumbotron3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.color-bg{
+    background: #202020
+}
+
+.color-bg2{
+    background: #4DB7FE
 }
