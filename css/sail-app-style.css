@@ -1,0 +1,23 @@
+
+.main-search-input-item input:first-child{
+    color: #292929;
+    font-family: inherit;
+}
+
+.intro-item h2,
+.section-subtitle{
+    font-weight: 300;
+}
+
+.section-title h2{
+    font-weight: 600;
+}
+
+.section-title p{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.listing-item-grid .listing-item-cat h3{
+    font-weight: 500;
+}
