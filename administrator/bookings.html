@@ -1,0 +1,309 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+  <!--=============== basic  ===============-->
+  <meta charset="UTF-8">
+  <title>Admin Luxury Voyage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <!--=============== css  ===============-->
+  <link type="text/css" rel="stylesheet" href="css/reset.css">
+  <link type="text/css" rel="stylesheet" href="css/plugins.css">
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/color.css">
+  <!-- vendor -->
+  <link type="text/css" rel="stylesheet" href="css/dashboard-style.css">
+  <style type="text/css">
+  #chartX,
+  #chartMap {
+    width: 100%;
+    height: 400px;
+  }
+  </style>
+  <!--=============== favicons ===============-->
+  <link rel="shortcut icon" href="images/sail-app-logo.ico">
+</head>
+
+<body>
+  <!-- loader -->
+  <div class="loader-wrap">
+    <div class="pin"></div>
+    <div class="pulse"></div>
+  </div>
+  <!--  loader end -->
+  <!-- Main   -->
+  <div id="main">
+    <!-- header  -->
+    <header class="main-header dark-header fs-header sticky">
+      <div class="header-inner">
+        <div class="logo-holder">
+          <a href="index.html"><img src="images/sail-app-nav-logo2.svg" alt=""></a>
+        </div>
+        <div class="header-user-menu">
+          <div class="header-user-name">
+            <span><img src="images/avatar/avatar-6.png" alt=""></span>
+            Hello , Alisa
+          </div>
+          <ul>
+            <li><a href="dashboard-myprofile.html"> Edit profile</a></li>
+            <li><a href="dashboard-add-listing.html"> Add Listing</a></li>
+            <li><a href="dashboard-bookings.html"> Bookings </a></li>
+            <li><a href="dashboard-review.html"> Reviews </a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+        <!-- nav-button-wrap-->
+        <div class="nav-button-wrap color-bg">
+          <div class="nav-button">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+        <!-- nav-button-wrap end-->
+        <!--  navigation -->
+        <!-- navigation  end -->
+      </div>
+    </header>
+    <!--  header end -->
+    <!-- wrapper -->
+    <div id="wrapper">
+      <!--content -->
+      <div class="content">
+        <!--section -->
+        <section id="sec1">
+          <!-- container -->
+          <div class="container">
+            <!-- profile-edit-wrap -->
+            <div class="profile-edit-wrap">
+              <div class="profile-edit-page-header">
+                <h2>Bookings</h2>
+                <div class="breadcrumbs"><a href="#">Home</a><a href="#">Dasboard</a><span>Bookings</span></div>
+              </div>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="fixed-bar fl-wrap">
+                    <div class="user-profile-menu-wrap fl-wrap">
+                      <!-- user-profile-menu-->
+                      <div class="user-profile-menu">
+                        <h3>Main</h3>
+                        <ul>
+                          <li><a href="index.html"><i class="fa fa-gears"></i>Dashboard</a></li>
+                          <li><a href="bookings.html" class="user-profile-act"><i class="fa fa-book"></i> Bookings</a></li>
+                          <li><a href="#"><i class="fa fa-newspaper-o"></i> Blogs</a></li>
+                          <li><a href="#"><i class="fa fa-users"></i>Customers</a></li>
+                        </ul>
+                      </div>
+                      <!-- user-profile-menu end-->
+                      <!-- user-profile-menu-->
+                      <div class="user-profile-menu">
+                        <h3>Master Data</h3>
+                        <ul>
+                          <li><a href="destination.html"><i class="fa fa-map-o"></i> Destination </a></li>
+                          <li><a href="yacth.html"> <i class="fa fa-ship"></i> Yacth <span>2</span></a></li>
+                        </ul>
+                      </div>
+                      <!-- user-profile-menu end-->
+                      <div class="user-profile-menu">
+                        <h3>Account</h3>
+                        <ul>
+                          <li><a href="#"><i class="fa fa-user-circle"></i> My Profile </a></li>
+                          <li><a href="#"><i class="fa fa-sign-out"></i> Logout </a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <div class="dashboard-list-box fl-wrap">
+                    <div class="dashboard-header fl-wrap">
+                      <h3>Bookings</h3>
+                    </div>
+                    <!-- dashboard-list end-->
+                    <div class="dashboard-list">
+                      <div class="dashboard-message">
+                        <div class="tombol-approve">
+                          <a href="#" class="btn circle-btn btn-success  color-bg flat-btn mr-4">Approve<i class="fa fa-check-square-o"></i></a>
+                          <a href="#" class="btn circle-btn btn-danger color-bg flat-btn">Cancel<i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="dashboard-message-avatar">
+                          <img src="images/avatar/avatar-1.png" alt="">
+                        </div>
+                        <div class="dashboard-message-text">
+                          <h4>Andy Smith</h4>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Booking Date</span> :
+                            <span class="booking-text" id="bookingDate">18.06.2021</span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Destination</span> :
+                            <span class="booking-text" id="destination"><a href="#">Komodo Central, North & Gili Banta</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Yacth </span> :
+                            <span class="booking-text" id="yacth"><a href="#">Haruku Bali Yatch</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Email </span> :
+                            <span class="booking-text" id="email">smithywerben_jj@gmail.com</span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Phone</span> :
+                            <span class="booking-text" id="telpon"><a href="tel:+628098999" target="_top">+628098999</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Payment Status</span> :
+                            <span class="booking-text" id="paymentStatus">
+                              <span class="badge badge-warning">Pending</span>
+                              <span class="badge badge-danger">Unpaid</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- dashboard-list end-->
+                    <!-- dashboard-list end-->
+                    <div class="dashboard-list">
+                      <div class="dashboard-message">
+                        <div class="tombol-approve">
+                          <a href="#" class="btn circle-btn btn-danger color-bg flat-btn">Cancel<i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="dashboard-message-avatar">
+                          <img src="images/avatar/avatar-2.png" alt="">
+                        </div>
+                        <div class="dashboard-message-text">
+                          <h4>Andy Smith</h4>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Booking Date</span> :
+                            <span class="booking-text" id="bookingDate">18.06.2021</span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Destination</span> :
+                            <span class="booking-text" id="destination"><a href="#">Komodo Central, North & Gili Banta</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Yacth </span> :
+                            <span class="booking-text" id="yacth"><a href="#">Haruku Bali Yatch</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Email </span> :
+                            <span class="booking-text" id="email">smithywerben_jj@gmail.com</span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Phone</span> :
+                            <span class="booking-text" id="telpon"><a href="tel:+628098999" target="_top">+628098999</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Payment Status</span> :
+                            <span class="booking-text" id="paymentStatus">
+                              <span class="badge badge-success">Success</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- dashboard-list end-->
+                    <!-- dashboard-list end-->
+                    <div class="dashboard-list">
+                      <div class="dashboard-message">
+                        <div class="tombol-approve">
+                          <a href="#" class="btn circle-btn btn-danger color-bg flat-btn">Cancel<i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="dashboard-message-avatar">
+                          <img src="images/avatar/avatar-3.png" alt="">
+                        </div>
+                        <div class="dashboard-message-text">
+                          <h4>Andy Smith</h4>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Booking Date</span> :
+                            <span class="booking-text" id="bookingDate">18.06.2021</span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Destination</span> :
+                            <span class="booking-text" id="destination"><a href="#">Komodo Central, North & Gili Banta</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Yacth </span> :
+                            <span class="booking-text" id="yacth"><a href="#">Haruku Bali Yatch</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Email </span> :
+                            <span class="booking-text" id="email">smithywerben_jj@gmail.com</span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Phone</span> :
+                            <span class="booking-text" id="telpon"><a href="tel:+628098999" target="_top">+628098999</a></span>
+                          </div>
+                          <div class="booking-details fl-wrap">
+                            <span class="booking-title">Payment Status</span> :
+                            <span class="booking-text" id="paymentStatus">
+                              <span class="badge badge-success">Success</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- dashboard-list end-->
+                  </div>
+                  <!-- pagination-->
+                  <div class="pagination">
+                    <a href="#" class="prevposts-link"><i class="fa fa-caret-left"></i></a>
+                    <a href="#" class="current-page">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#" class="nextposts-link"><i class="fa fa-caret-right"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--profile-edit-wrap end -->
+          </div>
+          <!--container end -->
+        </section>
+        <!-- section end -->
+        <div class="limit-box fl-wrap"></div>
+      </div>
+    </div>
+    <!-- wrapper end -->
+    <!--footer -->
+    <footer class="main-footer dark-footer " style="padding-top: 0px">
+      <div class="sub-footer fl-wrap" style="margin-top: 0px">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="about-widget">
+                <img src="images/sail-app-nav-logo2.svg" alt="">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="copyright"> &#169; The Luxury Voyage 2021. All rights reserved.</div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer-social">
+                <ul>
+                  <li><a href="#" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-chrome"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
+                  <li><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--footer end  -->
+    <a class="to-top"><i class="fa fa-angle-up"></i></a>
+  </div>
+  <!-- Main end -->
+  <!--=============== scripts  ===============-->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/plugins.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+  <!-- vendor -->
+  </body>
+
+</html>

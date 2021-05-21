@@ -1,0 +1,135 @@
+.new-dashboard-item {
+  top: 27px;
+  right: 10px;
+  padding: 5px 10px;
+}
+
+.dashboard-message-text {
+  padding-right: 5px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .5rem;
+}
+
+.col-form-label {
+  padding-top: calc(.375rem + 1px);
+  padding-bottom: calc(.375rem + 1px);
+  margin-bottom: 0;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.tombol-approve {
+  position: absolute;
+  top: 30px;
+  right: 12px
+}
+
+.btn-success {
+  background-color: rgba(40, 167, 69, 0.1) !important;
+  border-color: transparent !important;
+  color: #28A745 !important;
+}
+
+.btn-success:hover {
+  background-color: rgba(40, 167, 69, 0.2) !important;
+}
+
+.btn-danger {
+  background-color: rgba(220, 53, 69, 0.1) !important;
+  border-color: transparent !important;
+  color: #DC3545 !important;
+}
+
+.btn-danger:hover {
+  background-color: rgba(220, 53, 69, 0.2) !important;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: #007bff;
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #6c757d;
+}
+
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+}
+
+.badge-danger {
+  color: #fff;
+  background-color: #dc3545;
+}
+
+.badge-warning {
+  color: #212529;
+  background-color: #ffc107;
+}
+
+.badge-info {
+  color: #fff;
+  background-color: #17a2b8;
+}
+
+.badge-light {
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+.badge-dark {
+  color: #fff;
+  background-color: #343a40;
+}
+
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+
+.dashboard-listing-des{
+    text-align: left !important;
+}
+
+.new-dashboard-item-2 {
+    top: 31px;
+    left: 34px;
+    padding: 5px 10px;
+    width: 47px
+}
