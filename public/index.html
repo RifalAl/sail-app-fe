@@ -17,7 +17,6 @@
   <link type="text/css" rel="stylesheet" href="css/sail-app-style.css">
   <!-- vendor css -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css" />
-
   <!--=============== favicons ===============-->
   <link rel="shortcut icon" href="images/sail-app-logo.ico">
 </head>
@@ -32,7 +31,7 @@
   <!-- Main  -->
   <div id="main">
     <!-- header-->
-    <header class="main-header dark-header fs-header sticky">
+    <header class="main-header dark-header fs-header sticky transparent-bg">
       <div class="header-inner">
         <div class="logo-holder">
           <a href="index.html"><img src="images/sail-app-nav-logo2.svg" alt=""></a>
@@ -68,7 +67,7 @@
     </header>
     <!--  header end -->
     <!--  wrapper  -->
-    <div id="wrapper">
+    <div id="wrapper" class="custom-wrapper">
       <!-- Content-->
       <div class="content">
         <!--section -->
@@ -86,8 +85,8 @@
                   <div class="main-search-input-item">
                     <!-- <input type="text" placeholder="Mont/Year" value="" /> -->
                     <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                        <input class="form-control" type="text" readonly />
-                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                      <input class="form-control" type="text" readonly />
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                     </div>
                   </div>
                   <div class="main-search-input-item">
@@ -433,7 +432,6 @@
                   </div>
                 </li>
               </ul>
-              <div class="process-end"><i class="fa fa-check"></i></div>
             </div>
             <!--process-wrap   end-->
           </div>
@@ -447,152 +445,6 @@
               <h2>Visit the Best Places In Your City</h2>
               <h3>Find great places , hotels , restourants , shops.</h3>
               <a class="trs-btn" href="#">Add Listing + </a>
-            </div>
-          </div>
-        </section>
-        <!-- section end -->
-        <!--section -->
-        <section>
-          <div class="container">
-            <div class="section-title">
-              <h2> Pricing Tables</h2>
-              <div class="section-subtitle">cost of our services</div>
-              <span class="section-separator"></span>
-              <p>Explore some of the best tips from around the city from our partners and friends.</p>
-            </div>
-            <div class="pricing-wrap fl-wrap">
-              <!-- price-item-->
-              <div class="price-item">
-                <div class="price-head op1">
-                  <h3>Basic</h3>
-                </div>
-                <div class="price-content fl-wrap">
-                  <div class="price-num fl-wrap">
-                    <span class="curen">$</span>
-                    <span class="price-num-item">49</span>
-                    <div class="price-num-desc">Per month</div>
-                  </div>
-                  <div class="price-desc fl-wrap">
-                    <ul>
-                      <li>One Listing</li>
-                      <li>90 Days Availability</li>
-                      <li>Non-Featured</li>
-                      <li>Limited Support</li>
-                    </ul>
-                    <a href="#" class="price-link">Choose Basic</a>
-                  </div>
-                </div>
-              </div>
-              <!-- price-item end-->
-              <!-- price-item-->
-              <div class="price-item best-price">
-                <div class="price-head op2">
-                  <h3>Extended</h3>
-                </div>
-                <div class="price-content fl-wrap">
-                  <div class="price-num fl-wrap">
-                    <span class="curen">$</span>
-                    <span class="price-num-item">99</span>
-                    <div class="price-num-desc">Per month</div>
-                  </div>
-                  <div class="price-desc fl-wrap">
-                    <ul>
-                      <li>Ten Listings</li>
-                      <li>Lifetime Availability</li>
-                      <li>Featured In Search Results</li>
-                      <li>24/7 Support</li>
-                    </ul>
-                    <a href="#" class="price-link">Choose Extended</a>
-                    <div class="recomm-price">
-                      <i class="fa fa-check"></i>
-                      <span class="clearfix"></span>
-                      Recommended
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- price-item end-->
-              <!-- price-item-->
-              <div class="price-item">
-                <div class="price-head">
-                  <h3>Professional</h3>
-                </div>
-                <div class="price-content fl-wrap">
-                  <div class="price-num fl-wrap">
-                    <span class="curen">$</span>
-                    <span class="price-num-item">149</span>
-                    <div class="price-num-desc">Per month</div>
-                  </div>
-                  <div class="price-desc fl-wrap">
-                    <ul>
-                      <li>Unlimited Listings</li>
-                      <li>Lifetime Availability</li>
-                      <li>Featured In Search Results</li>
-                      <li>24/7 Support</li>
-                    </ul>
-                    <a href="#" class="price-link">Choose Professional</a>
-                  </div>
-                </div>
-              </div>
-              <!-- price-item end-->
-            </div>
-            <!-- about-wrap end  -->
-          </div>
-        </section>
-        <!-- section end -->
-        <!--section -->
-        <section class="color-bg">
-          <div class="shapes-bg-big"></div>
-          <div class="container">
-            <div class=" single-facts fl-wrap">
-              <!-- inline-facts -->
-              <div class="inline-facts-wrap">
-                <div class="inline-facts">
-                  <div class="milestone-counter">
-                    <div class="stats animaper">
-                      <div class="num" data-content="0" data-num="254">254</div>
-                    </div>
-                  </div>
-                  <h6>New Visiters Every Week</h6>
-                </div>
-              </div>
-              <!-- inline-facts end -->
-              <!-- inline-facts  -->
-              <div class="inline-facts-wrap">
-                <div class="inline-facts">
-                  <div class="milestone-counter">
-                    <div class="stats animaper">
-                      <div class="num" data-content="0" data-num="12168">12168</div>
-                    </div>
-                  </div>
-                  <h6>Happy customers every year</h6>
-                </div>
-              </div>
-              <!-- inline-facts end -->
-              <!-- inline-facts  -->
-              <div class="inline-facts-wrap">
-                <div class="inline-facts">
-                  <div class="milestone-counter">
-                    <div class="stats animaper">
-                      <div class="num" data-content="0" data-num="172">172</div>
-                    </div>
-                  </div>
-                  <h6>Won Awards</h6>
-                </div>
-              </div>
-              <!-- inline-facts end -->
-              <!-- inline-facts  -->
-              <div class="inline-facts-wrap">
-                <div class="inline-facts">
-                  <div class="milestone-counter">
-                    <div class="stats animaper">
-                      <div class="num" data-content="0" data-num="732">732</div>
-                    </div>
-                  </div>
-                  <h6>New Listing Every Week</h6>
-                </div>
-              </div>
-              <!-- inline-facts end -->
             </div>
           </div>
         </section>
@@ -767,7 +619,7 @@
             <div class="join-wrap fl-wrap">
               <div class="row">
                 <div class="col-md-8">
-                  <h3>Do You Have Questions ?</h3>
+                  <h3>We can't wait to have you on board</h3>
                   <p>Lorem ipsum dolor sit amet, harum dolor nec in, usu molestiae at no.</p>
                 </div>
                 <div class="col-md-4"><a href="contacts.html" class="join-wrap-btn">Get In Touch <i class="fa fa-envelope-o"></i></a></div>
@@ -784,56 +636,31 @@
     <footer class="main-footer dark-footer  ">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="footer-widget fl-wrap">
-              <h3>About Us</h3>
+              <h3 style="padding-bottom: 11px"><img src="images/sail-app-nav-logo2.svg" alt="" width="50%"></h3>
               <div class="footer-contacts-widget fl-wrap">
                 <p>In ut odio libero, at vulputate urna. Nulla tristique mi a massa convallis cursus. Nulla eu mi magna. Etiam suscipit commodo gravida. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam. </p>
                 <ul class="footer-contacts fl-wrap">
-                  <li><span><i class="fa fa-envelope-o"></i> Mail :</span><a href="#" target="_blank">yourmail@domain.com</a></li>
-                  <li> <span><i class="fa fa-map-marker"></i> Adress :</span><a href="#" target="_blank">USA 27TH Brooklyn NY</a></li>
-                  <li><span><i class="fa fa-phone"></i> Phone :</span><a href="#">+7(111)123456789</a></li>
+                  <li><span><i class="fa fa-envelope-o"></i> Mail :</span><a href="mailto: info@luxuryvoyage.com">info@luxuryvoyage.com</a></li>
+                  <li> <span><i class="fa fa-map-marker"></i> Adress :</span><a href="https://goo.gl/maps/WMY6JPRjNGeSn8L89" target="_blank">Jl. Moh Yamin VII, Denpasar, Bali, 80235</a></li>
+                  <li><span><i class="fa fa-phone"></i> Phone :</span><a href="tel: +6281246776052">+62 8124 6776 052</a></li>
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="footer-widget fl-wrap">
-              <h3>Our Last News</h3>
-              <div class="widget-posts fl-wrap">
-                <ul>
-                  <li class="clearfix">
-                    <a href="#" class="widget-posts-img"><img src="images/bg/berita-1.png" class="respimg" alt=""></a>
-                    <div class="widget-posts-descr">
-                      <a href="#" title="">Vivamus dapibus rutrum</a>
-                      <span class="widget-posts-date"> 21 Mar 09.05 </span>
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <a href="#" class="widget-posts-img"><img src="images/bg/berita-2.png" class="respimg" alt=""></a>
-                    <div class="widget-posts-descr">
-                      <a href="#" title=""> In hac habitasse platea</a>
-                      <span class="widget-posts-date"> 7 Mar 18.21 </span>
-                    </div>
-                  </li>
-                  <li class="clearfix">
-                    <a href="#" class="widget-posts-img"><img src="images/bg/berita-3.png" class="respimg" alt=""></a>
-                    <div class="widget-posts-descr">
-                      <a href="#" title="">Tortor tempor in porta</a>
-                      <span class="widget-posts-date"> 7 Mar 16.42 </span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
+              <h3>Useful Links</h3>
+              <ul class="footer-contacts fl-wrap no-dash">
+                <li><a href="#">Tailor-Made Experience</a></li>
+                <li><a href="#">Live Aboard Schedules</a></li>
+                <li><a href="#">Yacth Collection</a></li>
+                <li><a href="#">Destinations</a></li>
+              </ul>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="footer-widget fl-wrap">
-              <h3>Our Twitter</h3>
-              <div id="footer-twiit"></div>
-            </div>
-          </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="footer-widget fl-wrap">
               <h3>Subscribe</h3>
               <div class="subscribe-widget fl-wrap">
@@ -846,41 +673,15 @@
                   </form>
                 </div>
               </div>
-              <div class="footer-widget fl-wrap">
-                <div class="footer-menu fl-wrap">
-                  <ul>
-                    <li><a href="#">Home </a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Listing</a></li>
-                    <li><a href="#">Contacts</a></li>
-                  </ul>
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
       <div class="sub-footer fl-wrap">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4">
-              <div class="about-widget">
-                <img src="images/sail-app-nav-logo2.svg" alt="">
-              </div>
-            </div>
-            <div class="col-md-4">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
               <div class="copyright"> &#169; The Luxury voyage 2021 . All rights reserved.</div>
-            </div>
-            <div class="col-md-4">
-              <div class="footer-social">
-                <ul>
-                  <li><a href="#" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fa fa-chrome"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fa fa-vk"></i></a></li>
-                  <li><a href="#" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
-                </ul>
-              </div>
             </div>
           </div>
         </div>
@@ -959,12 +760,25 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&libraries=places&callback=initAutocomplete"></script> -->
   <script>
-    $(function () {
-      $("#datepicker").datepicker({
-            autoclose: true,
-            todayHighlight: true
-      }).datepicker('update', new Date());
-    });
+  $(function() {
+    $("#datepicker").datepicker({
+      autoclose: true,
+      todayHighlight: true
+    }).datepicker('update', new Date());
+  });
+  </script>
+  <script>
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    //>=, not <=
+    if (scroll >= 400) {
+      //clearHeader, not clearheader - caps H
+      $(".transparent-bg").addClass("scroll-bg");
+    } else if (scroll <= 399) {
+      $(".transparent-bg").removeClass("scroll-bg");
+    }
+  }); //missing );
   </script>
 </body>
 
