@@ -4,7 +4,7 @@
   font-weight: 600;
 }
 
-a:hover{
+a:hover {
   text-decoration: none;
 }
 
@@ -79,7 +79,7 @@ section.hero-section .bg {
   background-image: #FA5B63;
 }
 
-.nav-holder nav li a:before{
+.nav-holder nav li a:before {
   background-color: transparent !important;
   background: transparent;
 }
@@ -97,7 +97,8 @@ section.hero-section .bg {
 .list-author-widget-contacts li span i,
 .custom-form label i,
 .post-opt li i,
-.card-listing .geodir-category-location i {
+.card-listing .geodir-category-location i,
+.listing-features li i {
   color: #FA5B63;
 }
 
@@ -234,65 +235,65 @@ button:focus {
   text-decoration: none;
 }
 
-.info-yacht li{
+.info-yacht li {
   color: white;
   font-weight: 500;
   font-size: 1.1rem;
 }
 
-.card-body{
+.card-body {
   text-align: left;
 }
 
-.no-padding{
+.no-padding {
   padding: 0px;
 }
 
-.upper-card{
+.upper-card {
   padding: 15px 20px;
   background-color: #EE5A63;
   border-radius: 10px 10px 0px 0px;
 }
 
-.bottom-card{
+.bottom-card {
   padding: 15px 20px;
   background-color: #fff;
   border: 1.2px solid #E5E7F2;
   border-radius: 0px 0px 10px 10px;
 }
 
-.rec-border{
+.rec-border {
   border: 2px solid #fff;
   border-radius: 5px;
   padding: 2px;
 }
 
-.tgl{
+.tgl {
   font-weight: 600;
   color: white;
   font-size: 1rem;
 }
 
-.judul-card{
+.judul-card {
   font-weight: 600;
   color: white;
   font-size: 1rem;
 }
 
-.idr{
+.idr {
   font-weight: 600;
-  color:  #FA5B63;
+  color: #FA5B63;
   font-size: .9rem;
   margin-right: 7.5px;
 }
 
-.idr-value{
+.idr-value {
   font-weight: 600;
-  color:  #6A6A6A;
+  color: #6A6A6A;
   font-size: .9rem;
 }
 
-.btn-book{
+.btn-book {
   padding: 5px 15px;
   font-weight: 500;
   font-size: .9rem;
@@ -302,18 +303,62 @@ button:focus {
   border-radius: 3px;
 }
 
-.btn-book:hover{
+.btn-book:hover {
   background-color: #2954A6;
   color: white;
 }
 
-.inner-scroll{
+.btn-itenerary {
+  margin-top: 1.5rem;
+  padding: 5px 15px;
+  font-weight: 500;
+  font-size: .9rem;
+  border: 1px solid #FA5B63;
+  background-color: #fff;
+  color: #FA5B63;
+  border-radius: 3px;
+}
+
+.btn-itenerary:hover {
+  background-color: #FA5B63;
+  color: white;
+}
+
+
+.inner-scroll {
   max-height: 700px;
   overflow-y: scroll;
 }
 
-.box-item a.gal-link{
-  background: #fff;
+.inner-gallery-scroll {
+  max-height: 400px;
+  overflow-y: scroll;
 }
 
 
+.box-item a.gal-link {
+  background: #fff;
+}
+
+.booking-modal-wrap2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  overflow: hidden;
+  overflow-Y: auto;
+  -webkit-transform: translate3d(0, 0, 0);
+  display: none;
+}
+
+.title-modal{
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #0054A6;
+}
+
+.modals-body p{
+  color: #202020 !important;
+}
