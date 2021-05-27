@@ -71,16 +71,25 @@ section.hero-section .bg {
 .parallax-section .section-separator:before,
 .list-widget-social li a,
 .datepicker table tr td span.active,
-.datepicker table tr td span.active.active {
-  background-color: #FA5B63 !important;
+.datepicker table tr td span.active.active,
+.lg-actions .lg-prev,
+.lg-actions .lg-next {
+  background-color: #FA5B63;
   background: #FA5B63;
   background-image: #FA5B63;
 }
 
-.testimonials-carousel .slick-current .testimonilas-text {
+.nav-holder nav li a:before{
+  background-color: transparent !important;
+  background: transparent;
+}
+
+.testimonials-carousel .slick-current .testimonilas-text,
+.sw-btn {
   background: #0054A6;
 }
 
+.nav-holder nav li a.act-link,
 .section-subtitle,
 .listsearch-header h3 span,
 .card-listing .geodir-category-content h3 a,
