@@ -98,7 +98,8 @@ section.hero-section .bg {
 .custom-form label i,
 .post-opt li i,
 .card-listing .geodir-category-location i,
-.listing-features li i {
+.listing-features li i,
+.footer-contacts li i {
   color: #FA5B63;
 }
 
