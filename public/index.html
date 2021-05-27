@@ -10,6 +10,7 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <!--=============== css  ===============-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
   <link type="text/css" rel="stylesheet" href="css/reset.css">
   <link type="text/css" rel="stylesheet" href="css/plugins.css">
   <link type="text/css" rel="stylesheet" href="css/style.css">
@@ -84,26 +85,30 @@
                 <div class="main-search-input fl-wrap">
                   <div class="main-search-input-item">
                     <!-- <input type="text" placeholder="Mont/Year" value="" /> -->
-                    <div id="datepicker" class="input-group date" data-date-format="mm-dd-yyyy">
-                      <input class="form-control" type="text" readonly />
+                    <div id="datepicker" class="input-group date date-bold" data-date-format="dd-mm-yyyy">
+                      <input class="form-control" type="text" placeholder="Month/Year" readonly />
                       <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
                     </div>
                   </div>
                   <div class="main-search-input-item">
-                    <select data-placeholder="All Categories" class="chosen-select">
-                      <option disabled="" selected="">Yacth Type</option>
-                      <option>Shops</option>
-                      <option>Hotels</option>
-                      <option>Restaurants</option>
-                      <option>Fitness</option>
-                      <option>Events</option>
+                    <select id="yacthType" class="chosen-select">
+                      <option>Yacht 1</option>
+                      <option>Yacht 2</option>
+                      <option>Yacht 3</option>
+                      <option>Yacht 4</option>
+                      <option>Yacht 5</option>
                     </select>
                   </div>
-                  <div class="main-search-input-item location" id="autocomplete-container">
-                    <input type="text" placeholder="Destinations" id="autocomplete-input" value="" />
-                    <a href="#"><i class="fa fa-dot-circle-o"></i></a>
+                  <div class="main-search-input-item">
+                    <select id="destinationType" class="chosen-select">
+                      <option>Pulau 1</option>
+                      <option>Pulau 2</option>
+                      <option>Pulau 3</option>
+                      <option>Pulau 4</option>
+                      <option>Pulau 5</option>
+                    </select>
                   </div>
-                  <button class="main-search-button" onclick="window.location.href='listings-half-screen-map-list.html'">Search</button>
+                  <button class="main-search-button" onclick="window.location.href='halaman-search.html'">Search</button>
                 </div>
               </div>
             </div>
@@ -197,7 +202,7 @@
               <!-- gallery-item end-->
             </div>
             <!-- portfolio end -->
-            <a href="listing.html" class="btn  big-btn circle-btn dec-btn  color-bg flat-btn">View All<i class="fa fa-eye"></i></a>
+            <a href="halaman-search.html" class="btn  big-btn circle-btn dec-btn  color-bg flat-btn">View All<i class="fa fa-eye"></i></a>
           </div>
         </section>
         <!-- section end -->
@@ -442,9 +447,9 @@
           <!--container-->
           <div class="container">
             <div class="intro-item fl-wrap">
-              <h2>Visit the Best Places In Your City</h2>
-              <h3>Find great places , hotels , restourants , shops.</h3>
-              <a class="trs-btn" href="#">Add Listing + </a>
+              <h2>Visit the Best Places In Country</h2>
+              <h3>Find great places , experience, view.</h3>
+              <a class="trs-btn" href="#">Booking</a>
             </div>
           </div>
         </section>
@@ -758,13 +763,29 @@
   <script type="text/javascript" src="js/scripts.js"></script>
   <!-- vendor JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&libraries=places&callback=initAutocomplete"></script> -->
   <script>
+  $("#yacthType").select2({
+    placeholder: "Yacth Type",
+    allowClear: true
+  });
+  $("#destinationType").select2({
+    placeholder: "Destination",
+    allowClear: true
+  });
+  </script>
+  <script>
   $(function() {
+    // $("#datepicker").datepicker({
+    //   autoclose: true,
+    //   todayHighlight: true
+    // }).datepicker('update', new Date());
     $("#datepicker").datepicker({
-      autoclose: true,
-      todayHighlight: true
-    }).datepicker('update', new Date());
+      format: "MM-yyyy",
+      viewMode: "months",
+      minViewMode: "months"
+    });
   });
   </script>
   <script>

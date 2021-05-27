@@ -1,13 +1,18 @@
 .main-search-input-item input:first-child {
   color: #292929;
   font-family: inherit;
+  font-weight: 600;
 }
 
-section.hero-section .bg{
+a:hover{
+  text-decoration: none;
+}
+
+section.hero-section .bg {
   top: 0%;
 }
 
-.clr-white{
+.clr-white {
   color: #fff !important;
 }
 
@@ -59,32 +64,48 @@ section.hero-section .bg{
 .btn.flat-btn,
 .trs-btn,
 .to-top,
-.footer-widget #subscribe-button{
-  background-color: #FA5B63;
+.footer-widget #subscribe-button,
+.fs-map-btn,
+.pagination a.current-page,
+.list-single-header-cat a,
+.parallax-section .section-separator:before,
+.list-widget-social li a,
+.datepicker table tr td span.active,
+.datepicker table tr td span.active.active {
+  background-color: #FA5B63 !important;
+  background: #FA5B63;
+  background-image: #FA5B63;
 }
 
-.testimonials-carousel .slick-current .testimonilas-text{
+.testimonials-carousel .slick-current .testimonilas-text {
   background: #0054A6;
 }
 
-.section-subtitle{
+.section-subtitle,
+.listsearch-header h3 span,
+.card-listing .geodir-category-content h3 a,
+.list-single-main-item-title span,
+.list-author-widget-contacts li span i,
+.custom-form label i,
+.post-opt li i,
+.card-listing .geodir-category-location i {
   color: #FA5B63;
 }
 
-.listing-counter{
+.listing-counter {
   background: #FDDD72;
 }
 
-.listing-item-grid .listing-counter{
+.listing-item-grid .listing-counter {
   color: #202020;
 }
 
-.section-title h2{
+.section-title h2 {
   color: #0054A6;
 }
 
 .color-bg {
-  background: #202020
+  background: transparent;
 }
 
 .color-bg2,
@@ -107,12 +128,183 @@ section.hero-section .bg{
   padding-top: 0px !important;
 }
 
-.nav-holder nav li a:hover{
+.nav-holder nav li a:hover {
+  color: #FA5B63;
+  text-decoration: none;
+}
+
+.no-dash {
+  border-top: 0px;
+  margin-top: 1px;
+  ;
+  padding-top: 1px;
+}
+
+.title-section h2 {
+  font-weight: 300 !important;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.listsearch-input-item .nice-select {
+  background: #F9F9F9;
+  color: #757575;
+}
+
+.select-2 {
+  width: 100%;
+}
+
+.select2-container {
+  width: 100% !important
+}
+
+.select2-container--default .select2-selection--single {
+  float: left !important;
+  border: 1px solid #eee !important;
+  background: #f9f9f9 !important;
+  color: #757575 !important;
+  width: 100%;
+  padding: 8px 20px 40px 20px !important;
+  border-radius: 6px !important;
+  -webkit-appearance: none;
+  text-align: left !important;
+}
+
+.select2-results__option {
+  text-align: left !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 9px;
+  right: 5px;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #FA5B63
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered,
+.qodef-archive-places-search {
+  color: #202020;
+  font-weight: 600;
+}
+
+.date-bold {
+  font-weight: 600;
+}
+
+button:focus {
+  outline: 0px !important;
+}
+
+.fs-map-btn:hover {
+  background-color: #DD5050;
+}
+
+.fa-search:before {
   color: #FA5B63;
 }
 
-.no-dash{
-  border-top: 0px;
-  margin-top: 1px;;
-  padding-top: 1px;
+.listing-geodir-category,
+.accordion a.toggle.act-accordion {
+  background: #0C54A6;
 }
+
+.fa-angle-up:before {
+  color: white;
+}
+
+
+.join-wrap-btn:hover,
+.trs-btn:hover,
+.search-widget .search-submit:hover,
+.cs-wrapper .subcribe-form #subscribe #subscribe-button:hover,
+.cs-social li a:hover,
+.card-listing .geodir-category-content h3 a:hover {
+  text-decoration: none;
+}
+
+.info-yacht li{
+  color: white;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+.card-body{
+  text-align: left;
+}
+
+.no-padding{
+  padding: 0px;
+}
+
+.upper-card{
+  padding: 15px 20px;
+  background-color: #EE5A63;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.bottom-card{
+  padding: 15px 20px;
+  background-color: #fff;
+  border: 1.2px solid #E5E7F2;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.rec-border{
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.tgl{
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.judul-card{
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.idr{
+  font-weight: 600;
+  color:  #FA5B63;
+  font-size: .9rem;
+  margin-right: 7.5px;
+}
+
+.idr-value{
+  font-weight: 600;
+  color:  #6A6A6A;
+  font-size: .9rem;
+}
+
+.btn-book{
+  padding: 5px 15px;
+  font-weight: 500;
+  font-size: .9rem;
+  border: 1px solid #2954A6;
+  background-color: #fff;
+  color: #2954A6;
+  border-radius: 3px;
+}
+
+.btn-book:hover{
+  background-color: #2954A6;
+  color: white;
+}
+
+.inner-scroll{
+  max-height: 700px;
+  overflow-y: scroll;
+}
+
+.box-item a.gal-link{
+  background: #fff;
+}
+
+
