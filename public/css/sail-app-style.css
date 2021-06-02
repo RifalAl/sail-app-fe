@@ -354,12 +354,93 @@ button:focus {
   display: none;
 }
 
-.title-modal{
+.title-modal {
   font-size: 1.4rem;
   font-weight: 600;
   color: #0054A6;
 }
 
-.modals-body p{
+.modals-body p {
   color: #202020 !important;
 }
+
+.listing-features li {
+  width: 50%;
+}
+
+/*Tabel*/
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0px 0px;
+  width: 100%;
+}
+
+.tg td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg .tg-4qfk {
+  border-color: #343434;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: left;
+  top: -1px;
+  vertical-align: top;
+  will-change: transform
+}
+
+.tg .tg-iube {
+  background-color: #efefef;
+  border-color: #343434;
+  position: -webkit-sticky;
+  position: sticky;
+  text-align: left;
+  top: -1px;
+  vertical-align: top;
+  will-change: transform
+}
+
+.tg .tg-ur59 {
+  border-color: #343434;
+  text-align: left;
+  vertical-align: top
+}
+
+@media screen and (max-width: 767px) {
+  .tg {
+    width: auto !important;
+  }
+
+  .tg col {
+    width: auto !important;
+  }
+
+  .tg-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: auto 0px;
+  }
+}
+
+/*end tabel*/
