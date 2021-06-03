@@ -491,6 +491,12 @@ button:focus {
   .listing-features li {
     width: 100%;
   }
+
+  .grid-small-pad .grid-item-holder {
+    padding: 20px 0px 0px 0;
+    margin-bottom: 10px;
+  }
+
 }
 
 /*end tabel*/
