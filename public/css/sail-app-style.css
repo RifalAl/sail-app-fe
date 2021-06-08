@@ -427,6 +427,10 @@ button:focus {
   vertical-align: top
 }
 
+.listsearch-input-item-custom{
+  width: 50%;
+}
+
 @media screen and (max-width: 767px) {
 
   .wrap-div {
