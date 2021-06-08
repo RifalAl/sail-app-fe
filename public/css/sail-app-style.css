@@ -501,6 +501,11 @@ button:focus {
     margin-bottom: 10px;
   }
 
+
+.listsearch-input-item-custom{
+  width: 100%;
+}
+
 }
 
 /*end tabel*/
