@@ -427,9 +427,56 @@ button:focus {
   vertical-align: top
 }
 
-.listsearch-input-item-custom{
+.listsearch-input-item-custom {
   width: 50%;
 }
+
+.img-destination {
+  height: 194px;
+
+}
+
+.img-destination img {
+  width: 100% !important;
+  height: 194px !important;
+  object-fit: cover;
+}
+
+.card-destination {
+  border-radius: 10px;
+  border: 0px;
+  box-shadow: 7px 7px 15px -10px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 7px 7px 15px -10px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 7px 7px 15px -10px rgba(0, 0, 0, 0.3);
+}
+
+.card-destination h3 {
+  color: #FA5B63;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.card-destination p {
+  font-size: 12px;
+  color: #666;
+}
+
+.wrap-date {
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  width: 93%;
+}
+
+.listing-item.list-layout {
+  background: transparent;
+}
+
+.pagination {
+  justify-content: center
+}
+
 
 @media screen and (max-width: 767px) {
 
@@ -502,9 +549,20 @@ button:focus {
   }
 
 
-.listsearch-input-item-custom{
-  width: 100%;
-}
+  .listsearch-input-item-custom {
+    width: 100%;
+  }
+
+  .img-destination {
+    height: 265px;
+
+  }
+
+  .img-destination img {
+    width: 100% !important;
+    height: 265px !important;
+    object-fit: cover;
+  }
 
 }
 
