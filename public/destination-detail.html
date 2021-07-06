@@ -112,20 +112,24 @@
                 <div class="list-single-main-wrapper fl-wrap" id="sec2">
                   <!-- list-single-main-item -->
                   <div class="list-single-main-item fl-wrap" id="sec6">
-                    <div class="list-single-main-item-title fl-wrap">
+                    <div class="list-single-main-item-title">
                       <h3>About Komodo National Park</h3>
                     </div>
-                    <div id="desYacht" class="minimize">
+                    <div id="desDestination">
+                      <p>There is nothing more romantic, exotic or downright adventurous than boarding your own private Phinisi sailing boat decked out in antiques and state-of-the-art amenities and setting off to sea to explore secluded coves, traditional villages and deserted islands. The Alexa is a traditional Indonesian sailing vessel that has been lovingly restored to provide you with unique and luxurious cruises around Bali and the Indonesian archipelago. The ship's 7 crew includes a Cruise Director who is a certified dive instructor, a Resident Spa Therapist, Private Chef and Captain with 15 years navigating experience.</p>
+                      <p>There is nothing more romantic, exotic or downright adventurous than boarding your own private Phinisi sailing boat decked out in antiques and state-of-the-art amenities and setting off to sea to explore secluded coves, traditional villages and deserted islands. The Alexa is a traditional Indonesian sailing vessel that has been lovingly restored to provide you with unique and luxurious cruises around Bali and the Indonesian archipelago. The ship's 7 crew includes a Cruise Director who is a certified dive instructor, a Resident Spa Therapist, Private Chef and Captain with 15 years navigating experience.</p>
+                      <p>There is nothing more romantic, exotic or downright adventurous than boarding your own private Phinisi sailing boat decked out in antiques and state-of-the-art amenities and setting off to sea to explore secluded coves, traditional villages and deserted islands. The Alexa is a traditional Indonesian sailing vessel that has been lovingly restored to provide you with unique and luxurious cruises around Bali and the Indonesian archipelago. The ship's 7 crew includes a Cruise Director who is a certified dive instructor, a Resident Spa Therapist, Private Chef and Captain with 15 years navigating experience.</p>
                       <p>There is nothing more romantic, exotic or downright adventurous than boarding your own private Phinisi sailing boat decked out in antiques and state-of-the-art amenities and setting off to sea to explore secluded coves, traditional villages and deserted islands. The Alexa is a traditional Indonesian sailing vessel that has been lovingly restored to provide you with unique and luxurious cruises around Bali and the Indonesian archipelago. The ship's 7 crew includes a Cruise Director who is a certified dive instructor, a Resident Spa Therapist, Private Chef and Captain with 15 years navigating experience.</p>
                     </div>
-                    <span class="fw-separator"></span>
                   </div>
                   <!-- list-single-main-item end -->
                 </div>
               </div>
               <!--box-widget-wrap -->
               <div class="col-lg-6 second-div">
-                <img width="100%" src="https://images.squarespace-cdn.com/content/v1/5db452b7dbfd8f0b33a6c58c/1578648204475-9FJM5B1DPH0DTI9MYG2I/Screen+Shot+2020-01-10+at+5.22.08+pm.png">
+                <a class="lightbox" href="#roadTour">
+                  <img width="100%" src="https://images.squarespace-cdn.com/content/v1/5db452b7dbfd8f0b33a6c58c/1578648204475-9FJM5B1DPH0DTI9MYG2I/Screen+Shot+2020-01-10+at+5.22.08+pm.png" />
+                </a>
               </div>
               <!--box-widget-wrap end -->
               <div class="col-lg-12 third-div">
@@ -686,6 +690,12 @@
       </div>
     </div>
     <div class="bmw-overlay"></div>
+    <div class="col-lg-12">
+      <div class="lightbox-target" id="roadTour">
+        <img src="https://images.squarespace-cdn.com/content/v1/5db452b7dbfd8f0b33a6c58c/1578648204475-9FJM5B1DPH0DTI9MYG2I/Screen+Shot+2020-01-10+at+5.22.08+pm.png" />
+        <a class="lightbox-close" href="#"></a>
+      </div>
+    </div>
     <!--booking-modal-wrap end -->
     <a class="to-top"><i class="fa fa-angle-up"></i></a>
   </div>
@@ -694,10 +704,10 @@
   <script type="text/javascript" src="js/jquery.min.js"></script>
   <script type="text/javascript" src="js/plugins.js"></script>
   <script type="text/javascript" src="js/scripts.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEYHERE&libraries=places&callback=initAutocomplete"></script>
-  <script type="text/javascript" src="js/map_infobox.js"></script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOURAPIKEYHERE&libraries=places&callback=initAutocomplete"></script> -->
+  <!-- <script type="text/javascript" src="js/map_infobox.js"></script> -->
   <script type="text/javascript" src="js/markerclusterer.js"></script>
-  <script type="text/javascript" src="js/maps.js"></script>
+  <!-- <script type="text/javascript" src="js/maps.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
   <script>
   $("#countrySelect").select2({
@@ -717,24 +727,6 @@
       $(".transparent-bg").removeClass("scroll-bg");
     }
   }); //missing );
-  </script>
-  <script>
-  $(function() {
-
-    var minimized_elements = $('p.minimize');
-
-    minimized_elements.each(function() {
-      var t = $(this).text();
-      if (t.length < 150) return;
-
-      $(this).html(
-        t.slice(0, 150) + '<span>...' +
-        '<span style="display:none;">' + t.slice(150, t.length)
-      );
-
-    });
-
-  });
   </script>
 </body>
 
